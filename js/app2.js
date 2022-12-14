@@ -1,17 +1,17 @@
 $(function () {
 
-  let myGraph1 = document.getElementById("myGraph1");
+  let myGraph2 = document.getElementById("myGraph2");
   // let myGraph2 = document.getElementById("myGraph2");
   // let myGraph3 = document.getElementById("myGraph3");
   
-  let myChart = echarts.init(myGraph1,"dark");
+  let myChart = echarts.init(myGraph2,"dark");
   // let myChart2 = echarts.init(myGraph2,"dark");
   // let myChart3 = echarts.init(myGraph3,"dark");
   let option;
  
 
   const gaugeData = [{
-    value: 6,
+    value: 17,
     title: {
       offsetCenter: ["0%", "0%"],
     },
@@ -25,7 +25,7 @@ $(function () {
       type: "gauge",
       startAngle: 90,
       endAngle: -270,
-      max: 10,
+      max: 28,
       min: 0,
       backgroundColor: "#F00",
       itemStyle: {
@@ -67,9 +67,6 @@ $(function () {
         lineStyle: {
           width: 15,
         },
-        itemStyle: {
-          backgroundColor: "#F00"
-        }
       },
       splitLine: {
         show: false,
